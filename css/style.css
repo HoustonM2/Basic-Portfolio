@@ -1,0 +1,105 @@
+.header {
+    color: blue;
+    padding: 10px;
+    border: 40px;
+    border-color: red;
+    border-style: solid;
+    width: 300px;
+    background-color: red;
+    height: 10px;
+    position: static;
+    margin-top: 3%;
+    
+}
+
+.nav{
+    height: 100px;
+    /* margin: 0; */
+    padding: 2%;
+    /* overflow: hidden; */
+    background-color:white;
+    display: right;
+    color: black;
+    text-align: right;
+    /* padding: 16px; */
+    /* text-decoration: none;  */
+    /* position: relative; */
+    
+   
+}
+.article{
+    position: static;
+    background-color: aliceblue;
+    border: 60px;
+    width: 600px;
+    padding: 50px;
+    margin:25px;
+    margin-right: 130%;
+    margin-left: 0%;
+
+
+}
+body{
+    background-color: beige;
+    margin: 0;
+
+}
+#starter{
+    font-size: 30px;
+    text-decoration: underline;
+
+}
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:red;
+    display: right;
+    color: black;
+    text-align: right;
+    padding: 16px;
+    text-decoration: none; 
+    position: fixed
+  
+   
+}
+ul{
+    list-style-type:none;
+    float:right;
+    margin-top:0;
+}
+.test{
+    width: 25px;
+    height: 25px;
+}
+li{
+    display: inline;
+
+}
+button{
+    size: 4%;
+}
+img{
+    float: left;
+    width: 235px;
+}
+
+
+div.polaroid {
+    width: 20%;
+    background-color:red;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    
+  }
+  
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+
+  }
+  
+  
+
+  
+  
