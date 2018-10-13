@@ -1,105 +1,285 @@
-.header {
-    color: blue;
-    padding: 10px;
-    border: 40px;
-    border-color: red;
-    border-style: solid;
-    width: 300px;
-    background-color: red;
-    height: 10px;
-    position: static;
-    margin-top: 3%;
-    
-}
-
-.nav{
-    height: 100px;
-    /* margin: 0; */
-    padding: 2%;
-    /* overflow: hidden; */
-    background-color:white;
-    display: right;
-    color: black;
-    text-align: right;
-    /* padding: 16px; */
-    /* text-decoration: none;  */
-    /* position: relative; */
-    
-   
-}
-.article{
-    position: static;
-    background-color: aliceblue;
-    border: 60px;
-    width: 600px;
-    padding: 50px;
-    margin:25px;
-    margin-right: 130%;
-    margin-left: 0%;
-
-
-}
-body{
-    background-color: beige;
-    margin: 0;
-
-}
-#starter{
-    font-size: 30px;
-    text-decoration: underline;
-
-}
-.footer{
-    left: 0;
-    bottom: 0;
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777777;
+    background: url("../images/concrete_seamless.png");
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* general */
+  
+  .container {
     width: 100%;
-    background-color:red;
-    display: right;
-    color: black;
-    text-align: right;
-    padding: 16px;
-    text-decoration: none; 
-    position: fixed
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+  }
   
-   
-}
-ul{
-    list-style-type:none;
-    float:right;
-    margin-top:0;
-}
-.test{
-    width: 25px;
-    height: 25px;
-}
-li{
-    display: inline;
-
-}
-button{
-    size: 4%;
-}
-img{
+  h1,
+  h2,
+  h3,
+  p {
+    margin-bottom: 20px;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: 700;
+    color:blue;
+  }
+  
+  h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #dddddd;
+  }
+  
+  h2,
+  h3 {
+    font-size: 22px;
+  }
+  
+  /* header */
+  
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+  }
+  
+  #logo {
     float: left;
-    width: 235px;
-}
-
-
-div.polaroid {
-    width: 20%;
-    background-color:red;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-    
-  }
-  
-  div.container {
+    width: 250px;
+    height: 90px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
     text-align: center;
-    padding: 10px 20px;
-
+    text-decoration: none;
+    background: blue;
   }
   
+  nav {
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+  }
   
+  nav a {
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+  }
+  
+  nav a:first-child {
+    border-left: 0 none;
+  }
+  
+  /* footer */
+  
+  footer {
+    padding: 30px 0;
+    clear: both;
+    font-size: 12px;
+    color: #ffffff;
+    color: #cccccc;
+    text-align: center;
+    background: #666666;
+    border-top: 8px solid blue;
+    height: 50px;
+  }
+  
+  h3, h2 {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    border-bottom: 2px solid #eeeeee;
+  }
+  
+  /* main */
+  
+  #main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+  }
+  
+  .main-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
+  
+  /* portfolio page */
+  
+  .work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: blue;
+    border-bottom: 0;
+  }
+  
+  .auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  
+  /* contact page */
+  
+  #contact-form ul {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+  
+  label,
+  input[type=text],
+  input[type=email],
+  textarea {
+    display: block;
+    width: 100%;
+  }
+  
+  input[type=text],
+  input[type=email],
+  textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dddddd;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    cursor: pointer;
+    background: blue;
+    border: 0 none;
+  }
+  
+  @media only screen and (max-width: 980px){
+    header{
+      position: static;
+      text-align: center;
+      float:right;
+    }
+    .menu-on, .menu-off{
+      display: none;
+    }
+    nav{
+      display: block;
+      position: static;
+      text-align: center;
+    }
+    
+    footer{
+      display: block;
+    }
+    img{
+      width: 35%;
+    }
+  }
 
+  @media only screen and (max-width: 768px){
+    nav{
+      display: block;
+      position: static;
+      text-align: center;
+    }
+    .menu-on, .menu-off{
+      display: none;
+    }
+    header{
+      text-align: center;
+      float: right;
+    }
+    footer{
+      display: block;
+    }
+    img{
+      width: 20%;
+    }
+  }
+  @media only screen and (max-width: 640px){
+    header {
+      position: static;
+    }
   
+    nav {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+    footer{
+      display: block;
+    }
+
+    img{
+      width: 10%;
+    }
+    #logo{
+      width: 100%;
+    }
   
+     
+  }

@@ -1,60 +1,47 @@
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <title></title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
-<nav class="nav">
-    <header class="header">
-        <h1>Houston Moses</h1>
-    </header>
-    <ul>
-        <li><a href="/index.html"></a>About</li>
-        <li><a href="/portfolio.html"></a>Portfolio</li> 
-        <li><a href="/contact.html"></a>Contact</li>
-    </ul>
-</nav>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Houston Moses</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>About Me</h1>
 
-<!-- <div class="nav">
-    <nav>
-       <ul>
-        <li>About</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-    </ul>
-       
-    </nav>
-</div> -->
+      <img src="data:image/png;base64,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" class="auth-image" alt="Your Name">
 
-<div class="Article">
-        <article>
-          <p id="starter"><br>About Me</br></p>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcqL-zHzS4-b4YpVNAL4281mAKz95-IjM1Rzxr4v-_iu4xsbjz"
-          <p>Hello! My name is Houston and I've enjoyed my first week of coding bootcamp. There are somethings I'm unsure
-            about,but I will not let it discourage me.
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-          </p>
-          
-    
-        </article>
-    
-</div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
 
-<div class="footer">
-    <footer></footer>
-    
+      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
 
+      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
-</div>
+    </section>
 
+  </div>
 
-
-
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
 </body>
+
 </html>
